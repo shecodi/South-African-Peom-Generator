@@ -1,14 +1,17 @@
- function generatePoem(event) {
-   event.preventDefault();
 
-   new Typewriter("#poem", {
-     strings: " In every corner, beauty lies ",
+function generatePoem (event) {
 
-     autoStart: true,
-     delay: 1,
-     cursor: "",
-   });
- }
+  event.preventDefault () ;
 
- let poemFormElement = document.querySelector("#poem-generator-form");
- poemFormElement.addEventListener("submit", generatePoem);
+  new Typewriter ("#poem", {
+    strings : "The beauty lies in the eyes ",
+    autoStart : true ,
+    delay : 2 ,
+    cursor : "" ,
+  });
+}
+
+
+
+let poemFormElement = document.querySelector("#poem-generator-form");
+poemFormElement.addEventListener("submit", generatePoem);
