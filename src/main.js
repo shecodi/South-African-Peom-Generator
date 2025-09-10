@@ -20,7 +20,15 @@ let prompt = `User instructions : Generate a South African poem about ${instruct
 let context = "You're a romantic Poem expect and love to write  short poems. Your mission is to generate a 4 line poem , provided in HTML format. example : <div>This is the poem <div/> and seperate each line with a <br/>. Make sure to follow the user instructions. Don't include a tittle to the poem. Sign the poem with `SheCodes AI` inside a <strong> element at the bottom of the poem. ";
 let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apikey}`;
 
+
+ let poemElement = document.querySelector("#poem");
+ poemElement.classList.remove("hidden");
+ poemElement.innerHTML = `<div class="generating">⏳ Generating a South African poem about ${instructionsInput.value}</div>`;
+
+
+
 axios.get(apiUrl).then(displayPoem);
+
 
 
 }
