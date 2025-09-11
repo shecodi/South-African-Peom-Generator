@@ -1,71 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/style.css" />
-     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
-   
-     <title>AI South African Poem Generator</title>
-  </head>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="description" content="This is a poem generater for any topic you want.">
 
-  <body>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 
+  <link rel="stylesheet" href="src/style.css">
+  <title>Poem generator</title>
+</head>
+<body cz-shortcut-listen="true">
+  <div class="container">
+    <header class="header">
+      <div>
+      <h1>
+        Poem generator
+      </h1>
+     
+      </div>
 
- <div class="container">
-
- <header>
-      <h1 AI African Poem Generator></h1>
+        <img src="images/My-self.jpg" alt="">
+      
     </header>
 
-    <main>
+    <div class="form-container">
 
- <div class="form-container">
-
-      <form id="poem-generator-form">
-        <input
-          type="text"
-          placeholder="Enter the topic of the African poem"
-          autofocus
-          required
-          autocomplete="off"
-           class="instructions"
-           id="user-instructions"
-        />
-        <input type="submit" class="submit-button" />
+      <form id="poem-generator">
+        <input type="text" id="instructions" autofocus="" class="instructions" required="" placeholder="Enter the topic of the poem?" autocomplete="off">
+        <input type="submit" value="Generate Poem" class="btn" id="submit-button">
       </form>
-        <div class="hint">i.e: Flower, Africa or Cheese</div>
-</div>
+      <div class="hint">i.e: Flower, Africa or Cheese</div>
+    </div>
+    <div id="poem" class="poem">
+  Your laughter dances like the morning light, <br/>
+A melody that makes the world feel right.<br/>
+A beauty wrapped in love, I can't ignore.<br/>
+Your grace is like a whisper on the breeze,<br/>
+With every moment, you bring me to my knees.<br/>
+In your embrace, I find my sweetest peace.<br/>
 
-      <div class="poem hidden " id="poem" >
-      </div>
-    </main>
+    <strong>Abijah God'swill Kutwane</strong>
+ 
+  </div>
 
-
-
-    <footer>
+<footer>
       This AI project was coded by
       <a href="https://github.com/shecodi" class="link" target="_blank">Abijah God'swill Kutwane</a> and
       is
-      <a
-        href="https://github.com/shecodi/South-African-Peom-Generator"
-       class="link" 
-        target="_blank"
-      >
-        open-sourced on GitHub</a
-      >
+      <a href="https://github.com/shecodi/South-African-Peom-Generator" class="link" target="_blank">
+        open-sourced on GitHub</a>
       and is
-      <a href="https://abijah-south-african-poem-generator.netlify.app/" class="link"  target="_blank"
-        >hosted on Netlify</a
-      >.
+      <a href="https://abijah-south-african-poem-generator.netlify.app/" class="link" target="_blank">hosted on Netlify</a>.
     </footer>
 
-    </div>
+
+  <script src="src/main.js"></script>
 
 
-
-
-    <script src="src/main.js"></script>
-  </body>
-</html>
+</body></html>
