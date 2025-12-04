@@ -1,11 +1,34 @@
  body {
   color: rgb(49, 3, 3);
-  font-family: Merriweather;
-  background-image: url("/images/Patern.jpg");
+ 
 }
 
+.image-cover {
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+
+}
+
+.content-image {
+ 
+ max-height: 100%;
+  position: relative;
+  z-index: 2;
+  padding: 1rem 1.5rem;
+  animation: fadeIn 1.2s ease-in-out;
+
+}
+
+
+
 a {
-  color: rgb(224, 175, 175);
+  color: rgb(43, 33, 33);
   font-size: 13px;
 }
 
@@ -13,7 +36,7 @@ h1 {
   font-weight: 800;
   font-size: 36px;
   line-height: 1.5;
-  color:#FFFFFF;
+  color:#49260a;
   margin: 0;
 }
 
@@ -110,11 +133,17 @@ form {
 
 .btn {
   margin-left: 10px;
-  background: rgb(105, 50, 50);
+  background: rgb(116, 50, 19);
   padding: 14px 24px;
   border-radius: 50px;
   border: none;
-  color: #fff;
+  color: #b4a14b;
+}
+
+.btn:hover {
+ background: #b4a14b;
+ color:  rgb(117, 56, 28) ;
+
 }
 
 .btn:disabled {
@@ -125,7 +154,7 @@ footer {
   text-align: center;
   font-size: 12px;
   margin-top: 30px;
-  color: #fff;
+  color: #2e2b2b;
 }
 
 
